@@ -1,39 +1,20 @@
-# react-dropdown-select
+# boom-dropdown-select
 
-Customisable dropdown select for react
-
-[![](https://badgen.net/bundlephobia/minzip/react-dropdown-select)](https://bundlephobia.com/result?p=react-dropdown-select)
-[![](https://img.shields.io/npm/v/react-dropdown-select.svg)](https://www.npmjs.com/package/react-dropdown-select)
-[![Coverage Status](https://coveralls.io/repos/github/sanusart/react-dropdown-select/badge.svg?branch=master&service=github)](https://coveralls.io/github/sanusart/react-dropdown-select?branch=master)
-[![Build Status](https://travis-ci.org/sanusart/react-dropdown-select.svg?branch=master)](https://travis-ci.org/sanusart/react-dropdown-select)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/2a68db3684044b4cb0900f0ef4550a46)](https://www.codacy.com/app/sanusart/react-dropdown-select?utm_source=github.com&utm_medium=referral&utm_content=sanusart/react-dropdown-select&utm_campaign=Badge_Grade)
+This repository is a fork from [react-dropdown-select](https://github.com/sanusart/react-dropdown-select) `v4.7.4`
 
 ### Features
 
-- configurable via `prop`s
-- total custom components overrides for all internals via render prop callbacks (with access to internal props, state and methods)
-- stylable via css (or custom components)
-- portal support for rendering dropdown outside local DOM tree. e.g. in `document.body`
-- auto position
-- small bundle size
-
+- Inheriting  all features of `react-dropdown-select`
+- Add `onBlur` event in the props pf select
 ### Installation
 
-> `npm install --save react-dropdown-select`
-
-### Web site
-
-[Web site, docs and demo](https://sanusart.github.io/react-dropdown-select)
-
-### Motivation
-
-react-select is very nice, but sometimes project requirements are beyond it's abilities
+Use url of repository in `package.json`
 
 ### Usage
 
 import:
 
-`import Select from "react-dropdown-select";`
+`import Select from "boom-dropdown-select";`
 
 and use as:
 
@@ -42,19 +23,6 @@ and use as:
 ```
 
 > **options** and **onChange** are the minimum required props
-
-### Help and Contributions
-
-#### How to help/contribute
-
-- fix issues, pull request are very welcome
-- write, improve docs
-- write tests (we use jest)
-- suggest features and improvements
-
-### Demo
-
-[![Edit react-dropdown-select](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/p54p8y1987?autoresize=1)
 
 # API
 
@@ -108,6 +76,7 @@ and use as:
 | Prop                                                                                                     | Type | Default   | Description                                                                            |
 | -------------------------------------------------------------------------------------------------------- | ---- | --------- | -------------------------------------------------------------------------------------- |
 | onChange                                                                                                 | func |           | On values change callback, returns array of values objects                             |
+| onBlur                                                                                                 | func |           | On blur of select callback, returns array of values objects                             |
 | onDropdownClose                                                                                          | func |           | Fires upon dropdown close                                                              |
 | onDropdownOpen                                                                                           | func |           | Fires upon dropdown open                                                               |
 | onCreateNew                                                                                              | func |           | Fires upon creation of new item if `create` prop set to `true`                         |
@@ -127,6 +96,3 @@ and use as:
 | searchFn                                                                                                 | func | undefined | Overrides internal search function                                                     |
 | handleKeyDownFn                                                                                          | func | undefined | Overrides internal keyDown function                                                    |
 
-### License
-
-[MIT](https://github.com/sanusart/react-dropdown-select/blob/master/LICENSE)

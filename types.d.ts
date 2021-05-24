@@ -115,6 +115,7 @@ declare module 'react-dropdown-select' {
     required?: boolean;
     pattern?: string;
     onChange: (value: T[]) => void;
+    onBlur: () => void;
     onDropdownOpen?: () => void;
     onDropdownClose?: () => void;
     onClearAll?: () => void;

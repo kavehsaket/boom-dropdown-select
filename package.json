@@ -1,8 +1,8 @@
 {
-  "name": "react-dropdown-select",
-  "version": "4.7.4",
+  "name": "boom-dropdown-select",
+  "version": "1.0.0",
   "description": "Customizable dropdown select for react",
-  "main": "dist/react-dropdown-select.js",
+  "main": "dist/boom-dropdown-select.js",
   "module": "lib/index.js",
   "types": "types.d.ts",
   "sideEffects": false,
@@ -20,17 +20,17 @@
     "prepublishOnly": "npm run build",
     "version": "replace \"vPLACEHOLDER\" \"v$npm_package_version\" ./CHANGELOG.md && git add .",
     "preversion": "sh change-log-builder.sh",
-    "release:patch": "npm version patch -m \"v%s \nSee changelog: https://github.com/sanusart/react-dropdown-select/blob/master/CHANGELOG.md\"",
-    "release:minor": "npm version minor -m \"v%s \nSee changelog: https://github.com/sanusart/react-dropdown-select/blob/master/CHANGELOG.md\"",
-    "release:major": "npm version major -m \"v%s \nSee changelog: https://github.com/sanusart/react-dropdown-select/blob/master/CHANGELOG.md\""
+    "release:patch": "npm version patch -m \"v%s \nSee changelog: https://github.com/kavehsaket/boom-dropdown-select/blob/master/CHANGELOG.md\"",
+    "release:minor": "npm version minor -m \"v%s \nSee changelog: https://github.com/kavehsaket/boom-dropdown-select/blob/master/CHANGELOG.md\"",
+    "release:major": "npm version major -m \"v%s \nSee changelog: https://github.com/kavehsaket/boom-dropdown-select/blob/master/CHANGELOG.md\""
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sanusart/react-dropdown-select"
+    "url": "git+https://github.com/kavehsaket/boom-dropdown-select.git"
   },
   "bundlesize": [
     {
-      "path": "./dist/react-dropdown-select.js",
+      "path": "./dist/boom-dropdown-select.js",
       "maxSize": "20 kB"
     },
     {
@@ -45,8 +45,8 @@
     "multiselect",
     "dropdown"
   ],
-  "author": "Sasha Khamkov <sanusart@gmail.com>",
-  "license": "MIT",
+  "author": "BOOM Team",
+  "license": "UNKNOWN",
   "peerDependencies": {
     "react": ">=16.8.6",
     "react-dom": ">=16.8.6",
@@ -82,7 +82,7 @@
     "react-test-renderer": "^16.12.0",
     "replace": "^1.2.0",
     "style-loader": "^0.23.1",
-    "webpack": "^4.41.5",
+    "webpack": "^4.46.0",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.1"
   },
@@ -124,5 +124,13 @@
     "hooks": {
       "pre-commit": "npm test"
     }
+  },
+  "bugs": {
+    "url": "https://github.com/sanusart/react-dropdown-select/issues"
+  },
+  "homepage": "https://github.com/sanusart/react-dropdown-select#readme",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib"
   }
 }
