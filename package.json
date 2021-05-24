@@ -1,8 +1,8 @@
 {
   "name": "boom-dropdown-select",
-  "version": "4.7.4",
+  "version": "1.0.0",
   "description": "Customizable dropdown select for react",
-  "main": "dist/react-dropdown-select.js",
+  "main": "dist/boom-dropdown-select.js",
   "module": "lib/index.js",
   "types": "types.d.ts",
   "sideEffects": false,
@@ -20,17 +20,17 @@
     "prepublishOnly": "npm run build",
     "version": "replace \"vPLACEHOLDER\" \"v$npm_package_version\" ./CHANGELOG.md && git add .",
     "preversion": "sh change-log-builder.sh",
-    "release:patch": "npm version patch -m \"v%s \nSee changelog: https://github.com/sanusart/react-dropdown-select/blob/master/CHANGELOG.md\"",
-    "release:minor": "npm version minor -m \"v%s \nSee changelog: https://github.com/sanusart/react-dropdown-select/blob/master/CHANGELOG.md\"",
-    "release:major": "npm version major -m \"v%s \nSee changelog: https://github.com/sanusart/react-dropdown-select/blob/master/CHANGELOG.md\""
+    "release:patch": "npm version patch -m \"v%s \nSee changelog: https://github.com/kavehsaket/boom-dropdown-select/blob/master/CHANGELOG.md\"",
+    "release:minor": "npm version minor -m \"v%s \nSee changelog: https://github.com/kavehsaket/boom-dropdown-select/blob/master/CHANGELOG.md\"",
+    "release:major": "npm version major -m \"v%s \nSee changelog: https://github.com/kavehsaket/boom-dropdown-select/blob/master/CHANGELOG.md\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sanusart/react-dropdown-select.git"
+    "url": "git+https://github.com/kavehsaket/boom-dropdown-select.git"
   },
   "bundlesize": [
     {
-      "path": "./dist/react-dropdown-select.js",
+      "path": "./dist/boom-dropdown-select.js",
       "maxSize": "20 kB"
     },
     {
@@ -45,8 +45,8 @@
     "multiselect",
     "dropdown"
   ],
-  "author": "Sasha Khamkov <sanusart@gmail.com>",
-  "license": "MIT",
+  "author": "BOOM Team",
+  "license": "UNKNOWN",
   "peerDependencies": {
     "react": ">=16.8.6",
     "react-dom": ">=16.8.6",
