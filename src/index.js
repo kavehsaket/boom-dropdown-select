@@ -25,6 +25,7 @@ import { LIB_NAME } from './constants';
 export class Select extends Component {
   static propTypes = {
     onChange: PropTypes.func.isRequired,
+    onBlur: PropTypes.func,
     onDropdownClose: PropTypes.func,
     onDropdownCloseRequest: PropTypes.func,
     onDropdownOpen: PropTypes.func,
@@ -472,6 +473,11 @@ export class Select extends Component {
     }
   };
 
+  handleClickOutside = (event)=> {
+    this.dropDown('close', event);
+    this.props.onBlur(this.state.values);
+  }
+
   renderDropdown = () =>
     this.props.portal ? (
       ReactDOM.createPortal(
@@ -495,7 +501,7 @@ export class Select extends Component {
 
   render() {
     return (
-      <ClickOutside onClickOutside={(event) => this.dropDown('close', event)}>
+      <ClickOutside onClickOutside={this.handleClickOutside}>
         <ReactDropdownSelect
           onKeyDown={this.handleKeyDown}
           aria-label="Dropdown select"
@@ -588,6 +594,7 @@ Select.defaultProps = {
   required: false,
   pattern: undefined,
   onChange: () => undefined,
+  onBlur: () => undefined,
   onDropdownOpen: () => undefined,
   onDropdownClose: () => undefined,
   onDropdownCloseRequest: undefined,
