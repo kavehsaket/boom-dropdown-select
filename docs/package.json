@@ -1,0 +1,44 @@
+{
+  "name": "react-dropdown-select-site",
+  "private": true,
+  "description": "react-dropdown-select site made with Gatsby",
+  "version": "0.1.1",
+  "license": "MIT",
+  "scripts": {
+    "develop": "gatsby develop -H 0.0.0.0",
+    "start": "npm run develop",
+    "build": "gatsby build --prefix-paths",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.27",
+    "@emotion/styled": "^10.0.27",
+    "faker": "^4.1.0",
+    "gatsby": "^2.24.47",
+    "gatsby-plugin-catch-links": "^2.3.11",
+    "gatsby-plugin-emotion": "^4.3.10",
+    "gatsby-plugin-styled-components": "^3.3.10",
+    "gatsby-source-filesystem": "^2.3.24",
+    "gatsby-transformer-remark": "^2.8.28",
+    "normalize.css": "^8.0.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-dropdown-select": "^3.12.0",
+    "react-live": "^2.2.2",
+    "react-markdown": "^4.3.1",
+    "react-virtualized": "^9.21.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "gh-pages": "^2.2.0"
+  }
+}
