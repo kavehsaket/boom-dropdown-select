@@ -477,7 +477,6 @@ export class Select extends Component {
     this.dropDown('close', event);
     this.props.onBlur(this.state.values);
   }
-
   renderDropdown = () =>
     this.props.portal ? (
       ReactDOM.createPortal(
